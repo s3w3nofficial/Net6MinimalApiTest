@@ -47,10 +47,10 @@ public class OrderStateMachine :
                 })));
     }
 
-    public Event<SubmitOrder> SubmitOrder { get; }
-    public Event<AcceptOrder> AcceptOrder { get; }
-    public Event<GetOrder> GetOrder { get; }
+    public Event<SubmitOrder>? SubmitOrder { get; }
+    public Event<AcceptOrder>? AcceptOrder { get; }
+    public Event<GetOrder>? GetOrder { get; }
 
-    public State Submitted { get; }
-    public State Accepted { get; }
+    public State? Submitted { get; }
+    public State? Accepted { get; }
 }
